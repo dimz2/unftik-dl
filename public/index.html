@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>TikTok Downloader</title>
     <style>
         body {
@@ -72,31 +72,37 @@
             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(5px);
         }
-        
-        .card {
-            background-size: cover !important;
-            border: none !important;
-            border-radius: 15px !important;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
 
-        .btn-primary {
-            background-color: #6c63ff;
-            border: none;
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
         }
 
-        .btn-primary:hover {
-            background-color: #5753d8;
-        }
-
-        .result-overlay {
+        .feature-card {
             text-align: center;
-            padding: 2rem;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
         }
 
-        .result-author {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
+        .feature-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .feature-card p {
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .feature-card i {
+            font-size: 1.5em;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -108,10 +114,27 @@
 
     <h1>TikTok Downloader</h1>
     <input type="text" id="url" placeholder="Enter TikTok URL">
-
     <button onclick="downloadTikTok()">Download</button>
-
     <div id="result"></div>
+
+    <!-- New Feature Section -->
+    <div class="features">
+        <div class="feature-card">
+            <i class="bi bi-rocket"></i>
+            <h3>Cepat</h3>
+            <p>Cepat dan menggunakan Teknologi yang canggih.</p>
+        </div>
+        <div class="feature-card">
+            <i class="bi bi-shield-check"></i>
+            <h3>Keamanan Tinggi</h3>
+            <p>Kami memastikan tidak meminta privasi Pengguna kami, Dan keamanan nya terjaga.</p>
+        </div>
+        <div class="feature-card">
+            <i class="bi bi-x-circle"></i>
+            <h3>Tanpa Iklan</h3>
+            <p>Tidak ada iklan, Kami hanya meminta Donasi seikhlasnya dari pengguna.</p>
+        </div>
+    </div>
 
     <script>
         async function downloadTikTok() {
