@@ -37,11 +37,12 @@
         }
 
         .profile-container img {
-            width: 100px;
-            height: 100px;
+            width: 120px; /* Ukuran gambar profil yang lebih besar */
+            height: 120px; /* Menyesuaikan tinggi gambar */
             border-radius: 50%;
             border: 3px solid white;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            object-fit: cover; /* Memastikan gambar tidak terdistorsi dan mengisi ruang yang tersedia */
         }
 
         .profile-container p {
@@ -53,7 +54,7 @@
 
         h1 {
             font-size: 2.5em;
-            margin-top: 10px; /* Beri jarak antara gambar profil dan judul */
+            margin-top: 20px; /* Memberikan jarak yang cukup antara gambar profil dan judul */
             margin-bottom: 20px;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
