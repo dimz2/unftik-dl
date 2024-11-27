@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg" style="background: url('<%= data.thumbnail %>') no-repeat center center;">
+                <div class="card-body text-center">
+                    <img src="<%= data.profile %>" alt="<%= data.author %>" class="mb-4">
+                    <h5 class="card-title"><%= data.author %></h5>
+                    <p class="card-text"><%= data.caption %></p>
+                    <a href="<%= data.mp4 %>" class="btn btn-primary w-100 mb-2">Download Tanpa Tanda Air</a>
+                    <a href="<%= data.mp3 %>" class="btn btn-secondary w-100">Download MP3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

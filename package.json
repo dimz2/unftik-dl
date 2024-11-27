@@ -1,0 +1,26 @@
+{
+  "name": "dimasv2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "wisx",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "*", 
+    "fs": "*", 
+    "express": "*",
+    "cookie-parser": "*", 
+    "cheerio": "*", 
+    "path": "*", 
+    "url": "*", 
+    "ejs": "*", 
+    "node-fetch": "*"
+  },
+  "devDependencies": {},
+  "description": ""
+}
