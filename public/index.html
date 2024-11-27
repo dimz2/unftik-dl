@@ -17,7 +17,7 @@
             color: white;
             background: rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(10px);
-            cursor: pointer; /* Change cursor to indicate interactivity */
+            cursor: pointer;
         }
 
         #background-video {
@@ -34,6 +34,19 @@
             font-size: 2.5em;
             margin-bottom: 20px;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
 
         input, select, button {
@@ -128,6 +141,12 @@
         Your browser does not support the video tag.
     </video>
 
+    <!-- Profile Section -->
+    <div class="profile-container">
+        <img src="https://pomf2.lain.la/f/qp4i3m0.jpg" alt="Profile Picture">
+        <p>Powered by Dimz, bla bla bla...</p>
+    </div>
+
     <h1>TikTok Downloader</h1>
     <input type="text" id="url" placeholder="Enter TikTok URL">
     <button onclick="downloadTikTok()">Download</button>
@@ -164,7 +183,7 @@
 
         async function downloadTikTok() {
             const url = document.getElementById('url').value;
-            resultDiv = document.getElementById('result');
+            const resultDiv = document.getElementById('result');
           
             if (!url) {
                 alert('Please enter a TikTok URL');
