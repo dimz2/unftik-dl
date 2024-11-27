@@ -37,8 +37,8 @@
         }
 
         .profile-container img {
-            width: 120px; /* Ukuran gambar profil */
-            height: 120px;
+            width: 100px; /* Ukuran gambar profil */
+            height: 100px;
             border-radius: 50%;
             border: 3px solid white;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -53,7 +53,8 @@
 
         h1 {
             font-size: 2.5em;
-            margin-top: 20px; /* Beri jarak antara gambar profil dan judul */
+            margin-top: 10px; /* Beri jarak antara gambar profil dan judul */
+            margin-bottom: 20px;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
 
@@ -92,6 +93,7 @@
     </style>
 </head>
 <body>
+    <!-- Video Background -->
     <video id="background-video" autoplay loop muted>
         <source src="https://files.catbox.moe/sk80zf.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -103,6 +105,7 @@
         <p>Powered by Dimz, bla bla bla...</p>
     </div>
 
+    <!-- Main Content -->
     <h1>TikTok Downloader</h1>
     <input type="text" id="url" placeholder="Enter TikTok URL">
     <button onclick="downloadTikTok()">Download</button>
