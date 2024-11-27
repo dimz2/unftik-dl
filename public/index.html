@@ -17,6 +17,7 @@
             color: white;
             background: rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(10px);
+            cursor: pointer; /* Change cursor to indicate interactivity */
         }
 
         #background-video {
@@ -121,9 +122,9 @@
         }
     </style>
 </head>
-<body>
+<body onclick="playAudio()">
     <video id="background-video" autoplay loop muted>
-        <source src="https://files.catbox.moe/wfb7ml.mp4" type="video/mp4">
+        <source src="https://files.catbox.moe/sk80zf.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -151,7 +152,16 @@
         </div>
     </div>
 
+    <audio id="myAudio">
+        <source src="https://files.catbox.moe/n03jf1.mp3" type="audio/mp3">
+    </audio>
+
     <script>
+        function playAudio() {
+            const audio = document.getElementById('myAudio');
+            audio.play();
+        }
+
         async function downloadTikTok() {
             const url = document.getElementById('url').value;
             resultDiv = document.getElementById('result');
