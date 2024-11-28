@@ -123,17 +123,42 @@
             line-height: 1.2;
         }
 
-        .feature-card i {
-            font-size: 1.2em;
-            margin-bottom: 5px;
-        }
-
         .footer {
             position: fixed;
             bottom: 10px;
             text-align: center;
             font-size: 0.9em;
             color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Media query for desktop adjustments */
+        @media (min-width: 768px) {
+            body {
+                justify-content: flex-start;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 3em;
+            }
+
+            input, button {
+                width: 50%;
+                font-size: 1.2em;
+            }
+
+            .features {
+                gap: 20px;
+            }
+
+            .feature-card {
+                max-width: 250px;
+                padding: 20px;
+            }
+
+            .footer {
+                bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -159,17 +184,14 @@
     <!-- Features Section -->
     <div class="features">
         <div class="feature-card">
-            <i class="bi bi-rocket"></i>
             <h3>📡 Cepat</h3>
             <p>Fast download.</p>
         </div>
         <div class="feature-card">
-            <i class="bi bi-shield-check"></i>
             <h3>📢 Keamanan Tinggi</h3>
             <p>Kami memastikan tidak meminta privasi pengguna kami.</p>
         </div>
         <div class="feature-card">
-            <i class="bi bi-x-circle"></i>
             <h3>🚫 Tanpa Iklan</h3>
             <p>Tidak ada iklan.</p>
         </div>
