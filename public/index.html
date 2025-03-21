@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>TikTok Downloader</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://files.catbox.moe/2t38vu.jpg">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -131,7 +135,6 @@
             color: rgba(255, 255, 255, 0.7);
         }
 
-        /* Media query for desktop adjustments */
         @media (min-width: 768px) {
             body {
                 justify-content: flex-start;
@@ -163,25 +166,21 @@
     </style>
 </head>
 <body onclick="playAudio()">
-    <!-- Video Background -->
     <video id="background-video" autoplay loop muted>
         <source src="https://files.catbox.moe/sk80zf.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
-    <!-- Profile Section -->
     <div class="profile-container">
         <img src="https://pomf2.lain.la/f/qp4i3m0.jpg" alt="Profile Picture">
         <p>Powered by UNf</p>
     </div>
 
-    <!-- Main Content -->
     <h1>TikTok Downloader</h1>
     <input type="text" id="url" placeholder="Enter TikTok URL">
     <button onclick="downloadTikTok()">Download</button>
     <div id="result"></div>
 
-    <!-- Features Section -->
     <div class="features">
         <div class="feature-card">
             <h3>📡 Cepat</h3>
@@ -197,12 +196,10 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         Website by Nanda & Dimz
     </div>
 
-    <!-- Audio -->
     <audio id="myAudio">
         <source src="https://files.catbox.moe/n03jf1.mp3" type="audio/mp3">
     </audio>
